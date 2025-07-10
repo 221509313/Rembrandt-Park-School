@@ -4,49 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rembrandt Park School - Home</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Your existing CSS styles can remain mostly the same */
-        /* Just replace the banner styles with these: */
-        
-        .carousel-item {
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .carousel-item:nth-child(1) {
-            background-image: url('https://via.placeholder.com/1200x400/2c3e50/ffffff?text=School+Building');
-        }
-        
-        .carousel-item:nth-child(2) {
-            background-image: url('https://via.placeholder.com/1200x400/3498db/ffffff?text=Students+Learning');
-        }
-        
-        .carousel-item:nth-child(3) {
-            background-image: url('https://via.placeholder.com/1200x400/e74c3c/ffffff?text=School+Activities');
-        }
-        
-        .banner-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            width: 100%;
-            padding: 0 20px;
-            z-index: 10;
-        }
-        
-        .carousel-control-prev, .carousel-control-next {
-            z-index: 20;
-        }
-        
-        /* Rest of your existing CSS can remain the same */
+        /* Global Styles */
         * {
             margin: 0;
             padding: 0;
@@ -216,6 +175,98 @@
             color: #f1c40f;
         }
         
+        /* Banner Styles */
+        .banner {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner-slides {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .banner-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: slideShow 12s infinite;
+        }
+        
+        .banner-slide:nth-child(1) {
+            background-image: url('image1.png');
+            animation-delay: 0s;
+        }
+        
+        .banner-slide:nth-child(2) {
+            background-image: url('image2.png');
+            animation-delay: 4s;
+        }
+        
+        .banner-slide:nth-child(3) {
+            background-image: url('image3.png');
+            animation-delay: 8s;
+        }
+        
+        @keyframes slideShow {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            10% {
+                opacity: 1;
+            }
+            28% {
+                opacity: 1;
+            }
+            38% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+        
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        
+        .banner-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .banner-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
         /* Main Content Styles */
         .main-content {
             padding: 50px 0;
@@ -340,7 +391,7 @@
                 display: block;
             }
             
-            .carousel-item {
+            .banner {
                 height: 300px;
             }
             
@@ -353,6 +404,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -407,37 +459,17 @@
         </div>
     </header>
     
-    <!-- Bootstrap Carousel -->
-    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="banner-content">
-                    <h2>Striving for Excellence</h2>
-                    <p>Providing quality education and nurturing future leaders since 2nd August 1960</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="banner-content">
-                    <h2>Academic Excellence</h2>
-                    <p>Our curriculum challenges students while providing the support they need to succeed</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="banner-content">
-                    <h2>Character Development</h2>
-                    <p>We focus on values like integrity, respect, and responsibility</p>
-                </div>
-            </div>
+    <section class="banner">
+        <div class="banner-slides">
+            <div class="banner-slide"></div>
+            <div class="banner-slide"></div>
+            <div class="banner-slide"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        <div class="banner-content">
+            <h2>Striving for Excellence</h2>
+            <p>Providing quality education and nurturing future leaders since 2nd August 1960</p>
+        </div>
+    </section>
     
     <section class="main-content">
         <div class="container">
@@ -505,9 +537,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
         // Mobile menu toggle functionality
         document.getElementById('mobile-menu-button').addEventListener('click', function(e) {
