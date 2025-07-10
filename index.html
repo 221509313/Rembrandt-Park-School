@@ -18,14 +18,13 @@
             color: #333;
             line-height: 1.6;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        /* Header Styles */
+
         header {
             background-color: #2c3e50;
             color: white;
@@ -35,43 +34,42 @@
             top: 0;
             z-index: 100;
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
         }
-        
+
         .logo img {
             height: 60px;
             margin-right: 15px;
         }
-        
+
         .logo h1 {
             font-size: 1.8rem;
             font-weight: 700;
         }
-        
+
         .logo span {
             color: #f1c40f;
         }
-        
-        /* Desktop Navigation */
+
         .desktop-nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         .desktop-nav ul li {
             position: relative;
             margin-left: 20px;
         }
-        
+
         .desktop-nav ul li a {
             color: white;
             text-decoration: none;
@@ -80,16 +78,15 @@
             display: block;
             padding: 5px 0;
         }
-        
+
         .desktop-nav ul li a:hover {
             color: #f1c40f;
         }
-        
-        /* More dropdown */
+
         .more-dropdown {
             position: relative;
         }
-        
+
         .more-dropdown-content {
             display: none;
             position: absolute;
@@ -100,7 +97,7 @@
             z-index: 1;
             border-radius: 0 0 5px 5px;
         }
-        
+
         .more-dropdown-content a {
             color: white;
             padding: 12px 16px;
@@ -109,29 +106,27 @@
             text-align: left;
             border-bottom: 1px solid #34495e;
         }
-        
+
         .more-dropdown-content a:last-child {
             border-bottom: none;
         }
-        
+
         .more-dropdown-content a:hover {
             background-color: #34495e;
             color: #f1c40f;
         }
-        
+
         .more-dropdown:hover .more-dropdown-content {
             display: block;
         }
-        
-        /* Mobile Menu Toggle */
+
         .menu-toggle {
             display: none;
             cursor: pointer;
             font-size: 1.5rem;
             color: white;
         }
-        
-        /* Compact Mobile Menu */
+
         .mobile-menu {
             display: none;
             position: absolute;
@@ -145,23 +140,23 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 100;
         }
-        
+
         .mobile-menu.active {
             display: block;
         }
-        
+
         .mobile-menu ul {
             list-style: none;
         }
-        
+
         .mobile-menu ul li {
             border-bottom: 1px solid #34495e;
         }
-        
+
         .mobile-menu ul li:last-child {
             border-bottom: none;
         }
-        
+
         .mobile-menu ul li a {
             color: white;
             text-decoration: none;
@@ -169,77 +164,33 @@
             padding: 12px 20px;
             transition: background-color 0.3s;
         }
-        
+
         .mobile-menu ul li a:hover {
             background-color: #34495e;
             color: #f1c40f;
         }
-        
-        /* Banner Styles */
-        .banner {
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            background-image: url('image1.png');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-        }
-        
-        .banner-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-        
-        .banner-content h2 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        
-        .banner-content p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        /* Main Content Styles */
+
         .main-content {
             padding: 50px 0;
         }
-        
+
         .welcome-section {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .welcome-section h2 {
             font-size: 2.2rem;
             color: #2c3e50;
             margin-bottom: 20px;
         }
-        
+
         .welcome-section p {
             font-size: 1.1rem;
             max-width: 800px;
             margin: 0 auto 30px;
         }
-        
+
         .btn {
             display: inline-block;
             background-color: #f1c40f;
@@ -250,21 +201,21 @@
             font-weight: 600;
             transition: all 0.3s;
         }
-        
+
         .btn:hover {
             background-color: #e67e22;
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
+
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
-        
+
         .feature-card {
             background-color: white;
             border-radius: 8px;
@@ -272,84 +223,72 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .feature-card i {
             font-size: 2.5rem;
             color: #f1c40f;
             margin-bottom: 20px;
         }
-        
+
         .feature-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
             color: #2c3e50;
         }
-        
-        /* Footer Styles */
+
         footer {
             background-color: #2c3e50;
             color: white;
             padding: 40px 0 20px;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         .footer-section h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
             color: #f1c40f;
         }
-        
+
         .footer-section p, .footer-section a {
             color: #ecf0f1;
             margin-bottom: 20px;
             display: block;
             text-decoration: none;
         }
-        
+
         .footer-section a:hover {
             color: #f1c40f;
         }
-        
+
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid #34495e;
         }
-        
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .desktop-nav ul li {
-                margin-left: 15px;
-            }
-        }
-        
+
         @media (max-width: 768px) {
             .desktop-nav {
                 display: none;
             }
-            
+
             .menu-toggle {
                 display: block;
             }
-            
-            .banner {
-                height: 300px;
-            }
-            
+
             .banner-content h2 {
                 font-size: 2rem;
             }
-            
+
             .welcome-section h2 {
                 font-size: 1.8rem;
             }
@@ -361,7 +300,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="logo.png" alt="School Logo">
+                <img src="images/logo.png" alt="School Logo">
                 <h1>Rembrandt Park <span>School</span></h1>
             </div>
             <nav class="desktop-nav">
@@ -370,20 +309,16 @@
                     <li><a href="#">About RPS</a></li>
                     <li><a href="#">Rules/Policies</a></li>
                     <li><a href="#">Events</a></li>
-                   <li><a href="https://iuhgroup.co.za/index.php" 
-                    style="color: #7a4b7a; font-weight: bold; text-decoration: none;
-                     background-color: #fdfd65; padding: 2px 5px; border-radius: 3px;">Online Class</a></li>
-                    
+                    <li><a href="https://iuhgroup.co.za/index.php" style="color: #7a4b7a; font-weight: bold; text-decoration: none; background-color: #fdfd65; padding: 2px 5px; border-radius: 3px;">Online Class</a></li>
                     <li class="more-dropdown">
                         <a href="#">More <i class="fas fa-chevron-down"></i></a>
                         <div class="more-dropdown-content">
-                            
                             <a href="#">Calendar</a>
                             <a href="#">Newsletter</a>
                             <a href="#">Gallery</a>
                             <a href="#">Extra Murals</a>
                             <a href="#">Contact Us</a>
-                             <a href="https://iuhgroup.co.za/index.php">Online Class</a>
+                            <a href="https://iuhgroup.co.za/index.php">Online Class</a>
                         </div>
                     </li>
                 </ul>
@@ -393,7 +328,6 @@
             </div>
             <div class="mobile-menu" id="mobile-menu">
                 <ul>
-                    
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About RPS</a></li>
                     <li><a href="#">Rules/Policies</a></li>
@@ -403,23 +337,21 @@
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Extra Murals</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="https://iuhgroup.co.za/index.php" style="color: #7a4b7a; font-weight: bold; text-decoration: none;
-                     background-color: #fdfd65; padding: 2px 5px; border-radius: 3px;">Online Class</a></li>
+                    <li><a href="https://iuhgroup.co.za/index.php" style="color: #7a4b7a; font-weight: bold; text-decoration: none; background-color: #fdfd65; padding: 2px 5px; border-radius: 3px;">Online Class</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    
-  <section class="banner" style="background-image: url('image1.png'); background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 0;"></div>
-    <div class="banner-content" style="position: relative; z-index: 1; text-align: center; color: white; padding: 0 20px;">
-        <h2 style="font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Striving for Excellence</h2>
-        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Providing quality education and nurturing future leaders since 2nd August 1960</p>
-    </div>
-</section>
 
+    <!-- ✅ Banner with Inline Background -->
+    <section class="banner" style="background-image: url('image1.png'); background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 0;"></div>
+        <div class="banner-content" style="position: relative; z-index: 1; text-align: center; color: white; padding: 0 20px;">
+            <h2 style="font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Striving for Excellence</h2>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Providing quality education and nurturing future leaders since 2nd August 1960</p>
+        </div>
+    </section>
 
-    
     <section class="main-content">
         <div class="container">
             <div class="welcome-section">
@@ -427,20 +359,18 @@
                 <p>At Rembrandt Park School, we are committed to providing a nurturing environment that fosters academic excellence, character development, and lifelong learning. Our dedicated faculty and staff work tirelessly to ensure every student reaches their full potential.</p>
                 <a href="#" class="btn">Learn More About Us</a>
             </div>
-            
+
             <div class="features">
                 <div class="feature-card">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Academic Excellence</h3>
                     <p>Our curriculum is designed to challenge students while providing the support they need to succeed in all academic areas.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-futbol"></i>
                     <h3>Extracurricular Activities</h3>
                     <p>We offer a wide range of sports, arts, and clubs to help students develop their talents and interests beyond the classroom.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-heart"></i>
                     <h3>Character Development</h3>
@@ -449,7 +379,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -458,28 +388,24 @@
                     <a href="#">Home</a>
                     <a href="#">About RPS</a>
                     <a href="#">Rules/Policies</a>
-                   
                 </div>
-                
                 <div class="footer-section">
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City</p>
                     <p><i class="fas fa-phone"></i> (123) 456-7890</p>
                     <p><i class="fas fa-envelope"></i> info@rembrandtparkschool.edu</p>
                 </div>
-                
                 <div class="footer-section">
                     <h3>School Hours</h3>
                     <p>Monday - Friday: 8:00 AM - 3:30 PM</p>
                     <p>Saturday - Sunday: Closed</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i>Facebook Link</a>
-                        <a href="#"><i class="fab fa-twitter"></i>X-link</a>
-                        <a href="#"><i class="fab fa-instagram"></i>Instagram Link</a>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter"></i> X</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2023 Rembrandt Park School. All Rights Reserved.</p>
             </div>
@@ -487,13 +413,11 @@
     </footer>
 
     <script>
-        // Mobile menu toggle functionality
         document.getElementById('mobile-menu-button').addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent event from bubbling up
+            e.stopPropagation();
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('active');
-            
-            // Change icon between bars and times
+
             const icon = this.querySelector('i');
             if (mobileMenu.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -503,8 +427,7 @@
                 icon.classList.add('fa-bars');
             }
         });
-        
-        // Close mobile menu when clicking anywhere else on the page
+
         document.addEventListener('click', function() {
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenu.classList.contains('active')) {
@@ -513,8 +436,7 @@
                 document.querySelector('#mobile-menu-button i').classList.add('fa-bars');
             }
         });
-        
-        // Prevent mobile menu from closing when clicking inside it
+
         document.getElementById('mobile-menu').addEventListener('click', function(e) {
             e.stopPropagation();
         });
