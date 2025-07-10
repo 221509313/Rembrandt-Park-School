@@ -183,61 +183,12 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-        }
-        
-        .banner-slides {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .banner-slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            background-image: url('https://source.unsplash.com/random/1600x900/?school,classroom');
             background-size: cover;
             background-position: center;
-            opacity: 0;
-            animation: slideShow 12s infinite;
         }
         
-        .banner-slide:nth-child(1) {
-            background-image: url('image1.png');
-            animation-delay: 0s;
-        }
-        
-        .banner-slide:nth-child(2) {
-            background-image: url('image2.png');
-            animation-delay: 4s;
-        }
-        
-        .banner-slide:nth-child(3) {
-            background-image: url('image3.png');
-            animation-delay: 8s;
-        }
-        
-        @keyframes slideShow {
-            0% {
-                opacity: 0;
-                transform: scale(1);
-            }
-            10% {
-                opacity: 1;
-            }
-            28% {
-                opacity: 1;
-            }
-            38% {
-                opacity: 0;
-                transform: scale(1.1);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(1);
-            }
-        }
-        
-        .banner::after {
+        .banner::before {
             content: '';
             position: absolute;
             top: 0;
@@ -460,11 +411,6 @@
     </header>
     
     <section class="banner">
-        <div class="banner-slides">
-            <div class="banner-slide"></div>
-            <div class="banner-slide"></div>
-            <div class="banner-slide"></div>
-        </div>
         <div class="banner-content">
             <h2>Striving for Excellence</h2>
             <p>Providing quality education and nurturing future leaders since 2nd August 1960</p>
